@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaksi</title>
+
+  <style> table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: 200px;
+  }
+  table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  input {
+    margin-bottom: 20px;
+  }
+  </style>
+</head>
+<body>
+
+  <h2>Mini Kasir</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Kode</th>
+        <th>Nama Barang</th>
+        <th>Harga</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>A</td>
+        <td>10000</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>B</td>
+        <td>20000</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>C</td>
+        <td>30000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <label for="ID">Items ID:</label>
+  <input type="text" id="ID" placeholder="Input ID">
+  <br></br>
+  <label for="Total">Total Items:</label>
+  <input type="Number" id="Total" placeholder="Items Quantity">
+
+  <button onclick="sumTotal()">Sum Total</button>
+
+  <script src="Script.js"></script>
+</body>
+</html>
